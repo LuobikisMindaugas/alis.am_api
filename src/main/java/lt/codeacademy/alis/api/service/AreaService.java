@@ -6,6 +6,7 @@ import lt.codeacademy.alis.api.exception.AreaNotFoundException;
 import lt.codeacademy.alis.api.repository.AreaRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
@@ -29,5 +30,14 @@ public class AreaService {
 
     public List<Area> getAreas(){
         return areaRepository.findAll();
+    }
+
+    public List<Area> findAreasByQuery(String query) {
+
+        if (query == null || query.length() == 0) {
+            return Collections.emptyList();
+        }
+
+        return areaRepository.findByNameLike("%"+query+"%");
     }
 }
