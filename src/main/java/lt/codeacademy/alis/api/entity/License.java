@@ -42,9 +42,5 @@ public class License {
     @Size(max = 255)
     private String description;
 
-//    @GeneratedValue
-//    @Column(columnDefinition = "VARCHAR(36)")
-//    @OneToOne(targetEntity = Area.class)
-//    private UUID areaId;
 }
 

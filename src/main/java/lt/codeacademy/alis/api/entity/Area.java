@@ -26,20 +26,14 @@ public class Area {
     @GeneratedValue
     @Column(columnDefinition = "VARCHAR(36)", updatable = false)
     @Type(type = "uuid-char")
-    private UUID uuid;
+    private UUID id;
 
     @NotBlank
     private String name;
 
-    @PositiveOrZero
-    @NotNull
-    private BigDecimal dayPrice;
+    private BigDecimal dayprice;
 
-    @PositiveOrZero
-    @NotNull
-    private BigDecimal monthPrice;
+    private BigDecimal monthprice;
 
-    @PositiveOrZero
-    @NotNull
-    private BigDecimal yearPrice;
+    private BigDecimal yearprice;
 }

@@ -9,8 +9,6 @@ import org.springframework.stereotype.Service;
 import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 /**
  * @Author Mindaugas Luobikis
@@ -23,17 +21,6 @@ public class LicenseService {
 
     public LicenseService(LicenseRepository licenseRepository) {
         this.licenseRepository = licenseRepository;
-    }
-
-    public void addLicense(License license) {
-        try {
-            if (license == null) {
-                return;
-            }
-            licenseRepository.save(license);
-        } catch (IllegalArgumentException e) {
-            log.error("Cannot create license {}", license);
-        }
     }
 
     public License getLicense(UUID id) {
