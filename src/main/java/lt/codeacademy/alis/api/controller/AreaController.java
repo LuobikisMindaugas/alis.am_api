@@ -1,5 +1,6 @@
 package lt.codeacademy.alis.api.controller;
 
+import io.swagger.annotations.Api;
 import lt.codeacademy.alis.api.Endpoint;
 import lt.codeacademy.alis.api.entity.Area;
 import lt.codeacademy.alis.api.entity.License;
@@ -17,6 +18,7 @@ import java.util.UUID;
  */
 @RestController
 @RequestMapping(Endpoint.API_ROOT + Endpoint.AREAS)
+@Api(tags = "AREA CONTROLLER")
 public class AreaController {
 
     private final AreaService areaService;

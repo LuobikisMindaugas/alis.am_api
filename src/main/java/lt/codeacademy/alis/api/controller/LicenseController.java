@@ -1,5 +1,6 @@
 package lt.codeacademy.alis.api.controller;
 
+import io.swagger.annotations.Api;
 import lt.codeacademy.alis.api.Endpoint;
 import lt.codeacademy.alis.api.entity.License;
 import lt.codeacademy.alis.api.service.LicenseService;
@@ -17,6 +18,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping(Endpoint.API_ROOT + Endpoint.LICENSES)
+@Api(tags = "LICENSE CONTROLLEr")
 public class LicenseController {
 
     private final LicenseService licenseService;
