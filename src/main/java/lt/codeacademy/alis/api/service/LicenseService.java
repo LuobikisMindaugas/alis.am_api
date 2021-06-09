@@ -32,8 +32,8 @@ public class LicenseService {
         return licenseRepository.findAll();
     }
 
-    public void update(License license) {
-        licenseRepository.save(license);
+    public License update(License license) {
+        return licenseRepository.save(license);
     }
 
     public void delete(UUID id) {
@@ -55,5 +55,16 @@ public class LicenseService {
         }
 
         return licenseRepository.findByNameLikeOrDescriptionLike("%"+query+"%", "%"+query+"%");
+    }
+
+    public void addLicense(License license) {
+        try {
+            if (license == null) {
+                return;
+            }
+            licenseRepository.save(license);
+        } catch (IllegalArgumentException e) {
+            log.error("Cannot create license {}", license);
+        }
     }
 }

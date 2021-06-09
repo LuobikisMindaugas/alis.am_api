@@ -1,8 +1,13 @@
-C:\Users\mluob\Desktop\Final Project Alis.am\alis_am_api\src\main\java\lt\codeacademy\alis\api\Endpoint.java
 C:\Users\mluob\Desktop\Final Project Alis.am\alis_am_api\src\main\java\lt\codeacademy\alis\api\service\LicenseService.java
 C:\Users\mluob\Desktop\Final Project Alis.am\alis_am_api\src\main\java\lt\codeacademy\alis\api\exception\LicenseNotFoundException.java
+C:\Users\mluob\Desktop\Final Project Alis.am\alis_am_api\src\main\java\lt\codeacademy\alis\api\service\AreaService.java
 C:\Users\mluob\Desktop\Final Project Alis.am\alis_am_api\src\main\java\lt\codeacademy\alis\api\controller\LicenseController.java
+C:\Users\mluob\Desktop\Final Project Alis.am\alis_am_api\src\main\java\lt\codeacademy\alis\api\controller\AreaController.java
+C:\Users\mluob\Desktop\Final Project Alis.am\alis_am_api\src\main\java\lt\codeacademy\alis\api\exception\AreaNotFoundException.java
+C:\Users\mluob\Desktop\Final Project Alis.am\alis_am_api\src\main\java\lt\codeacademy\alis\api\entity\Area.java
+C:\Users\mluob\Desktop\Final Project Alis.am\alis_am_api\src\main\java\lt\codeacademy\alis\api\Endpoint.java
+C:\Users\mluob\Desktop\Final Project Alis.am\alis_am_api\src\main\java\lt\codeacademy\alis\api\repository\AreaRepository.java
 C:\Users\mluob\Desktop\Final Project Alis.am\alis_am_api\src\main\java\lt\codeacademy\alis\api\entity\License.java
 C:\Users\mluob\Desktop\Final Project Alis.am\alis_am_api\src\main\java\lt\codeacademy\alis\api\Application.java
-C:\Users\mluob\Desktop\Final Project Alis.am\alis_am_api\src\main\java\lt\codeacademy\alis\api\entity\Area.java
+C:\Users\mluob\Desktop\Final Project Alis.am\alis_am_api\src\main\java\lt\codeacademy\alis\api\config\SwaggerConfiguration.java
 C:\Users\mluob\Desktop\Final Project Alis.am\alis_am_api\src\main\java\lt\codeacademy\alis\api\repository\LicenseRepository.java

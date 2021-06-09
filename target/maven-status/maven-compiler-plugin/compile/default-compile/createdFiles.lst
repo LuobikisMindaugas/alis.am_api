@@ -1,8 +1,13 @@
+lt\codeacademy\alis\api\service\AreaService.class
+lt\codeacademy\alis\api\config\SwaggerConfig.class
+lt\codeacademy\alis\api\exception\LicenseNotFoundException.class
+lt\codeacademy\alis\api\repository\AreaRepository.class
+lt\codeacademy\alis\api\controller\LicenseController.class
 lt\codeacademy\alis\api\service\LicenseService.class
 lt\codeacademy\alis\api\Application.class
 lt\codeacademy\alis\api\Endpoint.class
 lt\codeacademy\alis\api\entity\Area.class
-lt\codeacademy\alis\api\exception\LicenseNotFoundException.class
+lt\codeacademy\alis\api\exception\AreaNotFoundException.class
 lt\codeacademy\alis\api\entity\License.class
 lt\codeacademy\alis\api\repository\LicenseRepository.class
-lt\codeacademy\alis\api\controller\LicenseController.class
+lt\codeacademy\alis\api\controller\AreaController.class

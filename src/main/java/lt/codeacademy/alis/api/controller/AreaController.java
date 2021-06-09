@@ -4,12 +4,11 @@ import lt.codeacademy.alis.api.Endpoint;
 import lt.codeacademy.alis.api.entity.Area;
 import lt.codeacademy.alis.api.entity.License;
 import lt.codeacademy.alis.api.service.AreaService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.UUID;
 
@@ -41,4 +40,19 @@ public class AreaController {
         return areaService.findAreasByQuery(query);
     }
 
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseStatus(HttpStatus.CREATED)
+    public void createLicense(@Valid @RequestBody Area area){
+        areaService.addArea(area);
+    }
+
+    @DeleteMapping(value = Endpoint.AREA)
+    public void deleteLicense(@PathVariable UUID uuid){
+        areaService.delete(uuid);
+    }
+
+    @PutMapping
+    public Area updateLicense(@Valid @RequestBody Area area){
+        return areaService.update(area);
+    }
 }
