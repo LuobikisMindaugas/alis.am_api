@@ -15,4 +15,5 @@ public interface Endpoint {
     String AREAS = "/areas";
     String AREA = "/{" + UUID + "}";
 
+    String USERS = "/users";
 }

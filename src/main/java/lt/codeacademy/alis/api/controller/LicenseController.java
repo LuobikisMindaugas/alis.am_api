@@ -18,7 +18,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping(Endpoint.API_ROOT + Endpoint.LICENSES)
-@Api(tags = "LICENSE CONTROLLEr")
+@Api(tags = "LICENSE CONTROLLER")
 public class LicenseController {
 
     private final LicenseService licenseService;
