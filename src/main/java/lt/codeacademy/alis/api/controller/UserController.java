@@ -36,6 +36,7 @@ public class UserController {
     @ResponseStatus(HttpStatus.CREATED)
     public void createUser(@Valid @RequestBody User user){
         userService.addUser(user);
+        System.out.println(user.getName() + user.getEmail());
     }
 
 }
