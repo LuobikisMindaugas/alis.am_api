@@ -20,9 +20,14 @@ INSERT INTO AREA (id, name, dayprice, monthprice, yearprice) VALUES
 ('7a580a64-a414-40dc-8461-52aa79ff2259', 'Kauno marios', 1.6, 5.6, 24.5),
 ('7a580a64-a414-40dd-8861-52aa79ff2251', 'Vabalio ezeras', 15.9, 112.9, 334.9);
 
-INSERT INTO USER(id, name, surname, username, email, password) VALUES
-('acf49189-e072-48bf-949e-63d455f4fd86', 'Mindaugas', 'Luobikis', 'admin', 'm.luobikis@gmail.com', 'admin'),
-('acf49189-e172-48bf-949e-63d455f4fd86', 'Petras', 'Grazulis', 'gejus', 'uzlietuvavyrai@gmail.com', 'gejus'),
-('acf49189-e272-48bf-949e-63d455f4fd86', 'Vardenis', 'Pavardenis', 'user', 'user@gmail.com', 'user');
+INSERT INTO USERS (id, username, password, name, surname) VALUES
+('acf49189-e872-48b0-949e-63d455f4fd86', 'user',
+ '{bcrypt}$2y$12$Asaa8kGQMLq5IQ2LNb2VEeF6zKX4larg/rvALtrzLlJhczyl6teWC', 'Vardenis', 'Pavardenis'), /*pass*/
+('7a580a64-a414-40dc-8861-52aa79ff2258', 'admin',
+ '{bcrypt}$2y$12$RZ77B8lWhj..N1EA5Z2Q5.LnQ5YcwjhNaA13EljO6BvGMVeQeD4yO', 'Adminas', 'Adminauskas'); /*admin*/
+
+INSERT INTO ROLES (id, name) VALUES
+('acf49189-e872-48b0-949e-63d455f4fd86', 'USER'),
+('7a580a64-a414-40dc-8861-52aa79ff2258', 'ADMIN');
 
 
