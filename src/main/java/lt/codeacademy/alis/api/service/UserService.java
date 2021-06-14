@@ -1,41 +1,23 @@
 package lt.codeacademy.alis.api.service;
 
-import lombok.extern.slf4j.Slf4j;
 import lt.codeacademy.alis.api.entity.User;
 import lt.codeacademy.alis.api.repository.UserRepository;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
-/**
- * @Author Mindaugas Luobikis
- */
 @Service
-@Slf4j
-public class UserService {
+public class UserService implements UserDetailsService {
 
-    private final UserRepository userRepository;
+    private UserRepository userRepository;
 
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
-    public void addUser(User user) {
-        try {
-            if (user == null) {
-                return;
-            }
-            userRepository.save(user);
-        } catch (IllegalArgumentException e) {
-            log.error("Cannot create area {}", user);
-        }
-    }
-
-    public List<User> getUsers() {
-        return userRepository.findAll();
-    }
-
-    public User getUserByUsername(String username){
-        return userRepository.findUserByUsername(username);
+    @Override
+    public User loadUserByUsername(String username) throws UsernameNotFoundException {
+        return userRepository.findWithRolesByUsername(username)
+                .orElseThrow(() -> new UsernameNotFoundException("User not found."));
     }
 }
