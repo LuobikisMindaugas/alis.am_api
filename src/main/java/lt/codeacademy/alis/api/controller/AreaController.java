@@ -7,6 +7,8 @@ import lt.codeacademy.alis.api.entity.License;
 import lt.codeacademy.alis.api.service.AreaService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -17,7 +19,7 @@ import java.util.UUID;
  * @Author Mindaugas Luobikis
  */
 @RestController
-@RequestMapping(Endpoint.API_ROOT + Endpoint.AREAS)
+@RequestMapping(Endpoint.AREAS)
 @Api(tags = "AREA CONTROLLER")
 public class AreaController {
 
@@ -48,6 +50,7 @@ public class AreaController {
         areaService.addArea(area);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping(value = Endpoint.AREA)
     public void deleteLicense(@PathVariable UUID uuid){
         areaService.delete(uuid);
