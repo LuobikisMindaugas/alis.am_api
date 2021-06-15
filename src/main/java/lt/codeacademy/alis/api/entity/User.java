@@ -38,6 +38,7 @@ public class User implements UserDetails {
     @ManyToMany
     private Set<Role> roles;
 
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return roles;
