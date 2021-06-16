@@ -1,7 +1,5 @@
 package lt.codeacademy.alis.api.security;
 
-import lt.codeacademy.alis.api.entity.User;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

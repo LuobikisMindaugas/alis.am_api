@@ -1,10 +1,6 @@
 package lt.codeacademy.alis.api.service;
 
-import lt.codeacademy.alis.api.entity.Area;
 import lt.codeacademy.alis.api.entity.Role;
-import lt.codeacademy.alis.api.entity.User;
-import lt.codeacademy.alis.api.exception.AreaNotFoundException;
-import lt.codeacademy.alis.api.exception.RoleNotFoundException;
 import lt.codeacademy.alis.api.repository.RoleRepository;
 import org.springframework.stereotype.Service;
 

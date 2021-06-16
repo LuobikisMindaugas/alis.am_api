@@ -49,5 +49,8 @@ public class License {
     @ApiModelProperty(notes = "License description", required = true, name = "description")
     private String description;
 
+    @ManyToOne
+    private Area area;
+
 }
 

@@ -1,7 +1,6 @@
 package lt.codeacademy.alis.api.controller;
 
 import io.swagger.annotations.Api;
-import lt.codeacademy.alis.api.entity.License;
 import lt.codeacademy.alis.api.entity.User;
 import lt.codeacademy.alis.api.service.UserService;
 import org.springframework.http.HttpStatus;
