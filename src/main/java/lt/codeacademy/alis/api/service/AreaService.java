@@ -61,7 +61,4 @@ public class AreaService {
         }
     }
 
-    public List<Area> findAreasByRegionLike(String region) {
-        return areaRepository.findAreasByRegionLike(region);
-    }
 }
