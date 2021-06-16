@@ -1,0 +1,16 @@
+.red{
+    color: red;
+}
+
+.stickyfooter{
+
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.test{
+
+}

@@ -1,0 +1,25 @@
+{
+  "translation": {
+    "login": "Login",
+    "logout": "Logout",
+    "areas": "Areas",
+    "createArea": "Create Area",
+    "footer": "Lithuania's fishing license web shop",
+    "areaName": "Area name",
+    "dayprice": "Day price",
+    "monthprice": "Month price",
+    "yearprice": "Year price",
+    "submit": "Submit",
+    "register": "Register",
+    "username": "Username",
+    "password": "Password",
+    "repeatpassword": "Repeat password",
+    "buylicense": "Buy License",
+    "name": "Name",
+    "surname": "Surname",
+    "email": "E-mail"
+  },
+  "paragraph": {
+    "text": "You are in Lithuania's fishing sociaty web page where you can easily get prefered license for specific fishing area. If you keep reading this, that means that you pay attention to things which is not important. Be a man and concentrate!"
+  }
+}

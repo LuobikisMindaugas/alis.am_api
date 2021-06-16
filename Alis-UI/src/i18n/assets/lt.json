@@ -1,0 +1,25 @@
+{
+  "translation": {
+    "login": "Prisijungti",
+    "logout": "Atsijungti",
+    "areas": "Telkiniai",
+    "createArea": "Sukurti telkini",
+    "footer": "Lietuvos žvejybos bilietų tinklapis",
+    "areaName": "Telkinio pavadinimas",
+    "dayprice": "Dienos kaina",
+    "monthprice": "Menesio kaina",
+    "yearprice": "Metu kaina",
+    "submit": "Patvirtinti",
+    "register": "Registruotis",
+    "username": "Vartotojo vardas",
+    "password": "Slaptazodis",
+    "repeatpassword": "Pakartoti slaptazodi",
+    "buylicense": "Pirkti bilieta",
+    "name": "Vardas",
+    "surname": "Pavarde",
+    "email": "El. pastas"
+  },
+  "paragraph": {
+    "text": "Jus esate oficialiame Lietuvos zveju asocijacijos puslapyje, kur galite isigyti zvejybos bilietus specifikuotuose telkiniuose. Jei skaitai toliau, tai vadinasi kreipi demesi ten kur nereikia. Buk vyras ir susikaupk!"
+  }
+}
