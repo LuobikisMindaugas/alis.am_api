@@ -11,4 +11,6 @@ import java.util.UUID;
  */
 public interface AreaRepository extends JpaRepository<Area, UUID> {
     List<Area> findByNameLike(String query);
+
+    List<Area> findAreasByRegionLike(String region);
 }

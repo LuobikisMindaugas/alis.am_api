@@ -60,4 +60,8 @@ public class AreaService {
             log.error("Cannot create area {}", area);
         }
     }
+
+    public List<Area> findAreasByRegionLike(String region) {
+        return areaRepository.findAreasByRegionLike(region);
+    }
 }

@@ -4,6 +4,7 @@ import io.swagger.annotations.Api;
 import lt.codeacademy.alis.api.Endpoint;
 import lt.codeacademy.alis.api.entity.Area;
 import lt.codeacademy.alis.api.entity.License;
+import lt.codeacademy.alis.api.entity.User;
 import lt.codeacademy.alis.api.service.AreaService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -57,7 +58,12 @@ public class AreaController {
     }
 
     @PutMapping
-    public Area updateLicense(@Valid @RequestBody Area area){
+    public Area updateLicense(@RequestBody Area area){
         return areaService.update(area);
+    }
+
+    @GetMapping(consumes=MediaType.APPLICATION_JSON_VALUE)
+    public List<Area> getAreasByRegion(@RequestBody String region){
+        return areaService.findAreasByRegionLike(region);
     }
 }

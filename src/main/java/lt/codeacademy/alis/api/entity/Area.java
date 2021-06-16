@@ -42,4 +42,8 @@ public class Area {
 
     @ApiModelProperty(notes = "Area 1 year price", required = true, name = "yearprice")
     private BigDecimal yearprice;
+
+    @ApiModelProperty
+    @ManyToOne
+    private Area area;
 }
