@@ -44,20 +44,22 @@ public class AreaController {
         return areaService.findAreasByQuery(query);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.CREATED)
-    public void createLicense(@Valid @RequestBody Area area){
+    public void createArea(@Valid @RequestBody Area area){
         areaService.addArea(area);
     }
 
     @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping(value = Endpoint.AREA)
-    public void deleteLicense(@PathVariable UUID uuid){
+    public void deleteArea(@PathVariable UUID uuid){
         areaService.delete(uuid);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping
-    public Area updateLicense(@Valid @RequestBody Area area){
+    public Area updateArea(@Valid @RequestBody Area area){
         return areaService.update(area);
     }
 }
